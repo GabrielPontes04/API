@@ -754,6 +754,7 @@ module.exports = {
         {
           title: 'Workflow',
           collapsable: true,
+          icon: false,
           children: [
             'Workflow/Obtener Metadata De Tarea', 
             'Workflow/Obtener Procesos Habilitados', 

@@ -1,0 +1,7 @@
+.sidebar-link.is-collapsable > .sidebar-item-title::before {
+    display: none;
+  }
+  
+  .theme-default-content content__default{
+    background-color: blue;
+  }
