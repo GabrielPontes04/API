@@ -48,7 +48,7 @@ curl -X POST \
 </code-block>
 </code-group>
 
-El POST retornará la siguiente estructura:
+> El POST retornará la siguiente estructura:
 
 <code-group>
 <code-block title="XML" active>

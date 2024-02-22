@@ -13,12 +13,14 @@ export default ({
 }) => {
   Vue.mixin({
     mounted() {
+      var siteName = document.querySelector('span.site-name.can-hide');
+
+    if(siteName) {
+        siteName.style.display = 'none';
+    }
 
       // Selecciona todos los elementos <section> dentro de la lista
       var sidebarGroups = document.querySelectorAll('.sidebar-links .sidebar-group');
-
-      var nada = document.querySelectorAll('.site-name can-hide');
-      console.log(nada);
       // Itera sobre cada elemento y realiza las modificaciones necesarias
       sidebarGroups.forEach(function (group) {
         // Encuentra el elemento del icono dentro de este grupo

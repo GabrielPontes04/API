@@ -1,6 +1,6 @@
-## Autenticación
+# Autenticación
 
-Para poder utilizar los servicios es necesario autenticarse a efectos de obtener el SessionToken.
+holi Para poder utilizar los servicios es necesario autenticarse a efectos de obtener el SessionToken.
 
 Ejemplo de invocación al método de autenticación:
 
@@ -48,7 +48,7 @@ curl -X POST \
 </code-block>
 </code-group>
 
-     El POST retornará la siguiente estructura:
+> El POST retornará la siguiente estructura:
 
 <code-group>
 <code-block title="XML" active>

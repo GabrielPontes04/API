@@ -35,7 +35,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    logo: '/img/logocentrado.png',
+    logo: '/img/logocentrado-preview.png',
     editLinks: false,
     docsDir: "",
     editLinkText: "",
