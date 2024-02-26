@@ -3,7 +3,7 @@ const { description } = require("../../package");
 module.exports = {
   /* TÍTULO - Ref：https://v1.vuepress.vuejs.org/config/#title*/
   title: "Documentación API Banking",
-
+  theme: 'yuu',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
