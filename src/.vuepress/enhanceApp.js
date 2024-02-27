@@ -15,9 +15,59 @@ export default ({
     mounted() {
       var siteName = document.querySelector('span.site-name.can-hide');
 
-    if(siteName) {
+      // Seleccionamos todos los enlaces dentro del elemento con la clase "sidebar-links"
+      var enlaces = document.querySelectorAll('.sidebar-links .sidebar-link');
+
+      // Función para cambiar el color de los enlaces
+      function cambiarColorEnlaces() {
+        // Iteramos sobre cada enlace
+        enlaces.forEach(function (enlace) {
+          // Verificamos si el enlace tiene la clase "active"
+          if (!enlace.classList.contains('active')) {
+            // Si no tiene la clase "active", cambiamos su color a blanco
+            enlace.style.color = "white";
+          } else {
+            // Si tiene la clase "active", mantenemos su color original
+            enlace.style.color = "";
+          }
+        });
+      }
+
+      // Llamamos a la función al cargar la página para establecer el color inicial
+      cambiarColorEnlaces();
+
+      // Capturamos el evento de clic en los enlaces
+      enlaces.forEach(function (enlace) {
+        enlace.addEventListener('click', function () {
+          // Llamamos a la función para cambiar el color de los enlaces después del clic
+          cambiarColorEnlaces();
+        });
+      });
+
+
+
+      if (siteName) {
         siteName.style.display = 'none';
-    }
+      }
+
+      var darkThemeToggle = document.getElementById('dark-theme-toggle');
+      var logoImage = document.querySelector('.logo');
+
+      // Verificar el estado inicial del checkbox al cargar la página
+      if (darkThemeToggle.checked) {
+        logoImage.src = "/img/logo.png";
+      } else {
+        logoImage.src = "/img/logocentrado-preview.png";
+      }
+
+      darkThemeToggle.addEventListener('change', function () {
+        // Cambiar la imagen dependiendo del estado del checkbox
+        if (darkThemeToggle.checked) {
+          logoImage.src = "/img/logo.png";
+        } else {
+          logoImage.src = "/img/logocentrado-preview.png";
+        }
+      });
 
       // Selecciona todos los elementos <section> dentro de la lista
       var sidebarGroups = document.querySelectorAll('.sidebar-links .sidebar-group');
@@ -25,14 +75,8 @@ export default ({
       sidebarGroups.forEach(function (group) {
         // Encuentra el elemento del icono dentro de este grupo
         var icon = group.querySelector('.arrow');
-
         // Oculta el icono cambiando su estilo
         icon.style.display = 'none';
-
-        // También puedes cambiar el icono por completo si lo deseas
-        // Por ejemplo, puedes cambiar la clase CSS del icono para usar otro icono
-        // icon.classList.remove('right');
-        // icon.classList.add('down');
       });
       const sidebar = document.querySelector('.sidebar');
       if (sidebar) {

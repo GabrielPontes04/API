@@ -1,6 +1,6 @@
 # Autenticación
 
-holi Para poder utilizar los servicios es necesario autenticarse a efectos de obtener el SessionToken.
+Para poder utilizar los servicios es necesario autenticarse a efectos de obtener el SessionToken.
 
 Ejemplo de invocación al método de autenticación:
 

@@ -3,7 +3,7 @@ const { description } = require("../../package");
 module.exports = {
   /* TÍTULO - Ref：https://v1.vuepress.vuejs.org/config/#title*/
   title: "Documentación API Banking",
-
+  theme: 'yuu',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -19,7 +19,7 @@ module.exports = {
    */
   head: [
     
-    ['link', { rel: 'icon', href: './img/logo_nuevo_mini.png' }],
+    ['link', { rel: 'icon', href: 'https://www.bantotal.com/wp-content/uploads/2017/11/cropped-Icono-flecha-web_Mesa-de-trabajo-1-32x32.png' }],
     ["meta", { name: "theme-color", content: "#C8070A" }],
     ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
     [
