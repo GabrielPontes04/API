@@ -13,8 +13,8 @@ export default ({
 }) => {
   Vue.mixin({
     mounted() {
-      var siteName = document.querySelector('span.site-name.can-hide');
 
+      var siteName = document.querySelector('span.site-name.can-hide');
       // Seleccionamos todos los enlaces dentro del elemento con la clase "sidebar-links"
       var enlaces = document.querySelectorAll('.sidebar-links .sidebar-link');
 
@@ -43,8 +43,6 @@ export default ({
           cambiarColorEnlaces();
         });
       });
-
-
 
       if (siteName) {
         siteName.style.display = 'none';

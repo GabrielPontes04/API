@@ -6,6 +6,41 @@ Nombre publicación | Programa | Global/País
 --------- | ----------- | ----------- 
 BTPAE.ObtenerScores | RBTPG511 | Institucional 
 
+### Datos de entrada 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+modeloEvaluacionId | Int | Código de modelo de evaluación. 
+
+### Datos de salida 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+sdtScoresPAE | sBTScorePAE | Listado de scores de un modelo PAE. 
+
+Los campos del tipo de dato estructurado sBTScorePAE son los siguientes: 
+
+Campo | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+codigoModelo | Numerico | Código de modelo. 
+codigoItem | Numerico | Código de item. 
+correlativo | Numerico | Correlativo. 
+desdeNumerico | Numerico | Número desde. 
+desdeCaracter | String | Caracter desde. 
+desdeFecha | Date | Fecha desde. 
+hastaNumerico | Numerico | Número hasta. 
+hastaCaracter | String | Caracter hasta. 
+hastaFecha | Date | Fecha hasta. 
+valorScoreRango | Numerico | Rango del valor score. 
+valorPolitica | String | Valor de política para el rango (S/N). 
+idPolitica | Numerico | Codigo de política. 
+mensajeIncumPolitica | String | Mensaje de política incumplida. 
+tipoRestriccion| String | Tipo de restricción por defecto. ('I'= Informativa; 'A'= Alerta; 'B'= Bloqueante; 'E'= Bloqueante con Excepción;). 
+
+### Errores 
+
+No aplica. 
+
 > Ejemplo de invocación al método Obtener Scores: 
 
 <code-group> 
@@ -631,39 +666,5 @@ https://appjava2019:8067/bancowdesa/servlet/com.dlya.bantotal.odwsbt_BTPAE_v1?Ob
 </code-block> 
 </code-group> 
 
-### Datos de entrada 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-modeloEvaluacionId | Int | Código de modelo de evaluación. 
-
-### Datos de salida 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-sdtScoresPAE | sBTScorePAE | Listado de scores de un modelo PAE. 
-
-Los campos del tipo de dato estructurado sBTScorePAE son los siguientes: 
-
-Campo | Tipo | Comentarios 
---------- | ----------- | ----------- 
-codigoModelo | Numerico | Código de modelo. 
-codigoItem | Numerico | Código de item. 
-correlativo | Numerico | Correlativo. 
-desdeNumerico | Numerico | Número desde. 
-desdeCaracter | String | Caracter desde. 
-desdeFecha | Date | Fecha desde. 
-hastaNumerico | Numerico | Número hasta. 
-hastaCaracter | String | Caracter hasta. 
-hastaFecha | Date | Fecha hasta. 
-valorScoreRango | Numerico | Rango del valor score. 
-valorPolitica | String | Valor de política para el rango (S/N). 
-idPolitica | Numerico | Codigo de política. 
-mensajeIncumPolitica | String | Mensaje de política incumplida. 
-tipoRestriccion| String | Tipo de restricción por defecto. ('I'= Informativa; 'A'= Alerta; 'B'= Bloqueante; 'E'= Bloqueante con Excepción;). 
-
-### Errores 
-
-No aplica. 
 
  

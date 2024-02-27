@@ -6,6 +6,33 @@ Nombre publicación | Programa | Global/País
 --------- | ----------- | ----------- 
 BTPAE.ObtenerItemsModelo | RBTPGP52 | Global 
 
+### Datos de entrada 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+modeloId | Short | Código de modelo.   
+
+### Datos de salida 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+sdtItems | sBTItemPAE | Listado de items de modelo PAE. 
+
+Los campos del tipo de dato estructurado sBTItemPAE son los siguientes: 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+itemId | Short | Código de item. 
+tipoDato | String | Descripción de tipo de dato. 
+nombre | String | Nombre de item. 
+
+### Errores 
+
+Código | Descripción 
+--------- | ----------- 
+1011050 | No se recibio modelo de evaluacion PAE.  
+
+
 > Ejemplo de invocación al servicio de Obtener Items Modelo: 
 
 <code-group> 
@@ -273,30 +300,5 @@ curl -X POST \
 </code-block> 
 </code-group> 
 
-### Datos de entrada 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-modeloId | Short | Código de modelo.   
-
-### Datos de salida 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-sdtItems | sBTItemPAE | Listado de items de modelo PAE. 
-
-Los campos del tipo de dato estructurado sBTItemPAE son los siguientes: 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-itemId | Short | Código de item. 
-tipoDato | String | Descripción de tipo de dato. 
-nombre | String | Nombre de item. 
-
-### Errores 
-
-Código | Descripción 
---------- | ----------- 
-1011050 | No se recibio modelo de evaluacion PAE.  
 
  

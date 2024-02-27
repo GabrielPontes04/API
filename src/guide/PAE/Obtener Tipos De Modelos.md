@@ -6,6 +6,29 @@ Nombre publicación | Programa | Global/País
 --------- | ----------- | ----------- 
 BTPAE.ObtenerTiposDeModelos | RBTPG514 | Institucional 
 
+### Datos de entrada 
+
+No aplica. 
+
+### Datos de salida 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+sdtTModelosPAE | sBTTModeloPAE | Listado de los modelos de evaluacion. 
+
+Los campos del tipo de dato estructurado sBTTModeloPAE son los siguientes: 
+
+Campo | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+tipoModelo | Numerico | Identificador del tipo de modelo. 
+descripcion | String | Descripción del tipo de modelo. 
+categoriaModelo | Numerico | Categoría de Modelo (1 - Lineal, 2 - Mínimo, 3 - Máximo, 4 - Especial). 
+programaEvaluacion | String | Programa particular para realizar la evaluación del modelo. 
+
+### Errores 
+
+No aplica. 
+
 > Ejemplo de invocación al método Obtener Tipos De Modelos: 
 
 <code-group> 
@@ -177,27 +200,6 @@ https://appjava2019:8067/bancowdesa/servlet/com.dlya.bantotal.odwsbt_BTPAE_v1?Ob
 </code-block> 
 </code-group> 
 
-### Datos de entrada 
 
-No aplica. 
 
-### Datos de salida 
 
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-sdtTModelosPAE | sBTTModeloPAE | Listado de los modelos de evaluacion. 
-
-Los campos del tipo de dato estructurado sBTTModeloPAE son los siguientes: 
-
-Campo | Tipo | Comentarios 
---------- | ----------- | ----------- 
-tipoModelo | Numerico | Identificador del tipo de modelo. 
-descripcion | String | Descripción del tipo de modelo. 
-categoriaModelo | Numerico | Categoría de Modelo (1 - Lineal, 2 - Mínimo, 3 - Máximo, 4 - Especial). 
-programaEvaluacion | String | Programa particular para realizar la evaluación del modelo. 
-
-### Errores 
-
-No aplica. 
-
-ECHO está desactivado.

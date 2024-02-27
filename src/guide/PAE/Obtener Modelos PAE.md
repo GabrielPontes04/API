@@ -6,6 +6,30 @@ Nombre publicación | Programa | Global/País
 --------- | ----------- | ----------- 
 BTPAE.ObtenerModelosPAE | RBTPGP51 | Global 
 
+
+### Datos de entrada 
+
+No aplica. 
+
+### Datos de salida 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+sdtModelosPAE | sBTModeloPAE | Listado de modelos PAE. 
+
+Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes: 
+
+Nombre | Tipo | Comentarios 
+--------- | ----------- | ----------- 
+modeloID | Short | Código de modelo. 
+descripcion | String | Descripción de modelo. 
+tipoModelo | String | Tipo de modelo. 
+
+### Errores 
+
+No aplica. 
+
+
 > Ejemplo de invocación al servicio de Obtener Modelos PAE: 
 
 <code-group> 
@@ -341,26 +365,5 @@ curl -X POST \
 </code-block> 
 </code-group> 
 
-### Datos de entrada 
-
-No aplica. 
-
-### Datos de salida 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-sdtModelosPAE | sBTModeloPAE | Listado de modelos PAE. 
-
-Los campos del tipo de dato estructurado sBTModeloPAE son los siguientes: 
-
-Nombre | Tipo | Comentarios 
---------- | ----------- | ----------- 
-modeloID | Short | Código de modelo. 
-descripcion | String | Descripción de modelo. 
-tipoModelo | String | Tipo de modelo. 
-
-### Errores 
-
-No aplica. 
 
  
