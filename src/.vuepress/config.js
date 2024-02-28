@@ -61,7 +61,11 @@ module.exports = {
     */
     sidebar: {
       '/guide/': [
-        'Autenticación',
+        {
+          title: 'Autenticación',
+          collapsable: true,
+          children: ['Autenticación'],
+        },
         {
           title: 'Ahorro Programado',
           collapsable: true,
