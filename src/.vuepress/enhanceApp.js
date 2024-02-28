@@ -15,34 +15,6 @@ export default ({
     mounted() {
 
       var siteName = document.querySelector('span.site-name.can-hide');
-      // Seleccionamos todos los enlaces dentro del elemento con la clase "sidebar-links"
-      var enlaces = document.querySelectorAll('.sidebar-links .sidebar-link');
-
-      // Función para cambiar el color de los enlaces
-      function cambiarColorEnlaces() {
-        // Iteramos sobre cada enlace
-        enlaces.forEach(function (enlace) {
-          // Verificamos si el enlace tiene la clase "active"
-          if (!enlace.classList.contains('active')) {
-            // Si no tiene la clase "active", cambiamos su color a blanco
-            enlace.style.color = "white";
-          } else {
-            // Si tiene la clase "active", mantenemos su color original
-            enlace.style.color = "";
-          }
-        });
-      }
-
-      // Llamamos a la función al cargar la página para establecer el color inicial
-      cambiarColorEnlaces();
-
-      // Capturamos el evento de clic en los enlaces
-      enlaces.forEach(function (enlace) {
-        enlace.addEventListener('click', function () {
-          // Llamamos a la función para cambiar el color de los enlaces después del clic
-          cambiarColorEnlaces();
-        });
-      });
 
       if (siteName) {
         siteName.style.display = 'none';
